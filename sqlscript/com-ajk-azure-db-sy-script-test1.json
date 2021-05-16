@@ -1,0 +1,18 @@
+{
+	"name": "com-ajk-azure-db-sy-script-test1",
+	"properties": {
+		"description": "com-ajk-azure-db-sy-script-test1",
+		"content": {
+			"query": "\nCREATE MASTER KEY;\n\nCREATE DATABASE SCOPED CREDENTIAL AzureStorageCredential\nWITH\n    IDENTITY = 'ajkdlstest1',\n    SECRET = 'axLVfov0V3Do5ewP8AOz6XTUZrBV6sLpWBu79PglYMAgJinqGVFYp2Rtkh2Cjg2EkJYMt1Ls3y/TWgHCha0Gyg==' -- put key1's value here\n;",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Built-in",
+				"databaseName": "master"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
